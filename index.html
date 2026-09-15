@@ -11,22 +11,27 @@
 
     <meta
         name="description"
-        content="Ryan Fraser's Computer Technology portfolio featuring web development, cybersecurity, and systems administration projects."
+        content="Ryan Fraser's portfolio featuring web development, cybersecurity, networking, and systems administration projects."
     >
 
-    <title>Ryan Fraser | Personal Portfolio</title>
+    <title>Ryan Fraser | Computer Technology Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
     <!-- Navigation -->
     <header>
         <nav aria-label="Main navigation">
 
             <a class="logo" href="#home">
-                Ryan Fraser
+                <span class="logo-mark">RF</span>
+                <span>Ryan Fraser</span>
             </a>
 
             <ul class="nav-links">
@@ -41,95 +46,211 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
 
         <!-- Home Section -->
         <section id="home" class="home">
 
             <div class="home-content">
 
-                <p class="intro-text">
-                    Hello, my name is
+                <p class="eyebrow">
+                    Welcome to my portfolio
                 </p>
 
-                <h1>Ryan Fraser</h1>
+                <h1>
+                    Hi, I’m <span>Ryan Fraser.</span>
+                </h1>
 
-                <h2>Computer Technology Student</h2>
+                <h2>
+                    Computer Technology Student and Aspiring IT Professional
+                </h2>
 
-                <p>
-                    I am a senior at Bowie State University with hands-on
-                    experience in web development, cybersecurity, database
-                    management, networking, and Windows Server administration.
+                <p class="home-description">
+                    I am a senior at Bowie State University with practical
+                    experience in web development, cybersecurity, networking,
+                    database management, and Windows Server administration.
+                    I enjoy using technology to build useful systems and solve
+                    real-world problems.
                 </p>
 
                 <div class="home-buttons">
 
                     <a href="#projects" class="button">
-                        View My Projects
+                        Explore My Projects
+                    </a>
+
+                    <a
+                        href="documents/Ryan-Fraser-Resume.pdf"
+                        class="button outline-button"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        View My Resume
                     </a>
 
                     <a
                         href="https://github.com/ryanfraser2024-bit"
-                        class="button secondary-button"
+                        class="button dark-button"
                         target="_blank"
                         rel="noopener"
                     >
-                        Visit My GitHub
+                        Visit GitHub
                     </a>
 
                 </div>
 
+                <div class="home-highlights">
+
+                    <div class="highlight">
+                        <strong>3</strong>
+                        <span>Featured Projects</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>2026</strong>
+                        <span>Expected Graduation</span>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>12+</strong>
+                        <span>Technical Skills</span>
+                    </div>
+
+                </div>
+
             </div>
+
+            <aside class="profile-panel" aria-label="Ryan Fraser profile summary">
+
+                <div class="profile-initials">
+                    RF
+                </div>
+
+                <p class="profile-label">
+                    Computer Technology
+                </p>
+
+                <h2>Ryan Fraser</h2>
+
+                <p>
+                    Bowie State University
+                </p>
+
+                <div class="profile-status">
+                    <span class="status-dot"></span>
+                    Preparing for graduation
+                </div>
+
+            </aside>
 
         </section>
 
         <!-- About Section -->
         <section id="about">
 
-            <h2 class="section-title">
-                About Me
-            </h2>
+            <div class="section-heading">
 
-            <div class="about-content">
-
-                <p>
-                    I am pursuing a Bachelor of Science in Computer Technology
-                    at Bowie State University and expect to graduate in
-                    December 2026. My coursework has allowed me to create web
-                    applications, design databases, analyze network traffic,
-                    and configure Windows Server environments.
+                <p class="section-label">
+                    Get to know me
                 </p>
 
-                <p>
-                    I also work as a substitute teacher and youth mentor.
-                    These experiences have strengthened my communication,
-                    leadership, organization, adaptability, and
-                    problem-solving skills.
+                <h2 class="section-title">
+                    About Me
+                </h2>
+
+                <p class="section-description">
+                    My academic background and professional experiences have
+                    helped me develop a combination of technical, communication,
+                    leadership, and problem-solving skills.
                 </p>
 
-                <h3>Education</h3>
+            </div>
 
-                <p>
-                    <strong>Bowie State University</strong><br>
-                    Bachelor of Science in Computer Technology<br>
-                    Expected graduation: December 2026
-                </p>
+            <div class="about-grid">
+
+                <article class="about-card about-summary">
+
+                    <span class="card-label">My Background</span>
+
+                    <h3>Technology, leadership, and continuous learning</h3>
+
+                    <p>
+                        I am pursuing a Bachelor of Science in Computer
+                        Technology at Bowie State University and expect to
+                        graduate in December 2026. My coursework has provided
+                        hands-on experience with websites, databases, network
+                        analysis, cybersecurity concepts, virtual machines,
+                        and Windows Server environments.
+                    </p>
+
+                    <p>
+                        Outside of technology, I work as a substitute teacher
+                        and youth mentor. These positions have strengthened my
+                        ability to communicate clearly, manage responsibilities,
+                        adapt to different situations, and help others accomplish
+                        their goals.
+                    </p>
+
+                </article>
+
+                <article class="about-card">
+
+                    <span class="card-number">01</span>
+
+                    <h3>Education</h3>
+
+                    <p>
+                        <strong>Bowie State University</strong>
+                    </p>
+
+                    <p>
+                        Bachelor of Science in Computer Technology
+                    </p>
+
+                    <p>
+                        Expected graduation: December 2026
+                    </p>
+
+                </article>
+
+                <article class="about-card">
+
+                    <span class="card-number">02</span>
+
+                    <h3>Professional Strengths</h3>
+
+                    <ul class="detail-list">
+                        <li>Communication</li>
+                        <li>Leadership</li>
+                        <li>Organization</li>
+                        <li>Adaptability</li>
+                        <li>Problem-solving</li>
+                        <li>Team collaboration</li>
+                    </ul>
+
+                </article>
+
+            </div>
+
+            <div class="skills-section">
 
                 <h3>Technical Skills</h3>
 
                 <ul class="skills-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
                     <li>JavaScript</li>
                     <li>PHP</li>
                     <li>SQL</li>
                     <li>MySQL</li>
                     <li>GitHub</li>
                     <li>Wireshark</li>
+                    <li>Network Analysis</li>
                     <li>Windows Server 2022</li>
                     <li>Hyper-V</li>
                     <li>Active Directory</li>
                     <li>Group Policy</li>
+                    <li>Technical Documentation</li>
                 </ul>
 
             </div>
@@ -139,19 +260,38 @@
         <!-- Projects Section -->
         <section id="projects">
 
-            <h2 class="section-title">
-                Projects
-            </h2>
+            <div class="section-heading">
 
-            <p class="projects-introduction">
-                These projects demonstrate my experience in web development,
-                cybersecurity, networking, and systems administration.
-            </p>
+                <p class="section-label">
+                    Selected work
+                </p>
+
+                <h2 class="section-title">
+                    Featured Projects
+                </h2>
+
+                <p class="section-description">
+                    These projects demonstrate my experience in web
+                    development, payment verification, cybersecurity,
+                    networking, and systems administration.
+                </p>
+
+            </div>
 
             <div class="project-container">
 
-                <!-- Credit Card Payment Verification Project -->
-                <article class="project-card">
+                <!-- Credit Card Project -->
+                <article class="project-card credit-card-project">
+
+                    <div class="project-top">
+
+                        <span class="project-number">01</span>
+
+                        <span class="project-category">
+                            Web Development
+                        </span>
+
+                    </div>
 
                     <h3>
                         Credit Card Payment Verification System
@@ -165,101 +305,138 @@
                         providing clear verification messages.
                     </p>
 
-                    <p class="technologies">
-                        <strong>Technologies:</strong>
-                        HTML, CSS, and JavaScript
-                    </p>
+                    <ul class="technology-tags">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
 
-                    <a
-                        href="documents/credit-card-payment-verification.pdf"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        View Project
-                    </a>
+                    <div class="project-links">
 
-                    <a
-                        href="https://github.com/ryanfraser2024-bit"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        View GitHub Profile
-                    </a>
+                        <a
+                            href="documents/credit-card-payment-verification.pdf"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            View Project
+                        </a>
+
+                        <a
+                            href="https://github.com/ryanfraser2024-bit"
+                            target="_blank"
+                            rel="noopener"
+                            class="secondary-project-link"
+                        >
+                            View GitHub
+                        </a>
+
+                    </div>
 
                 </article>
 
                 <!-- Wireshark Project -->
-                <article class="project-card">
+                <article class="project-card wireshark-project">
+
+                    <div class="project-top">
+
+                        <span class="project-number">02</span>
+
+                        <span class="project-category">
+                            Cybersecurity
+                        </span>
+
+                    </div>
 
                     <h3>
                         Wireshark Packet Inspection
                     </h3>
 
                     <p>
-                        Captured and analyzed live DNS, HTTP, HTTPS, TCP, and
-                        UDP traffic to identify protocol patterns, frequent
+                        Captured and analyzed DNS, HTTP, HTTPS, TCP, and UDP
+                        traffic to identify protocol patterns, frequent
                         destinations, network conversations, and potential
                         security concerns.
                     </p>
 
-                    <p class="technologies">
-                        <strong>Technologies:</strong>
-                        Wireshark, DNS, HTTP, HTTPS, TCP, and UDP
-                    </p>
+                    <ul class="technology-tags">
+                        <li>Wireshark</li>
+                        <li>DNS</li>
+                        <li>TCP</li>
+                        <li>UDP</li>
+                    </ul>
 
-                    <a
-                        href="documents/wireshark-packet-inspection.pdf"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        View Project
-                    </a>
+                    <div class="project-links">
 
-                    <a
-                        href="https://github.com/ryanfraser2024-bit"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        View GitHub Profile
-                    </a>
+                        <a
+                            href="documents/wireshark-packet-inspection.pdf"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            View Project
+                        </a>
+
+                        <a
+                            href="https://github.com/ryanfraser2024-bit"
+                            target="_blank"
+                            rel="noopener"
+                            class="secondary-project-link"
+                        >
+                            View GitHub
+                        </a>
+
+                    </div>
 
                 </article>
 
                 <!-- Windows Server Project -->
-                <article class="project-card">
+                <article class="project-card server-project">
+
+                    <div class="project-top">
+
+                        <span class="project-number">03</span>
+
+                        <span class="project-category">
+                            Systems Administration
+                        </span>
+
+                    </div>
 
                     <h3>
                         Windows Server Administration and Hyper-V
                     </h3>
 
                     <p>
-                        Completed a series of Windows Server 2022 labs
-                        involving Hyper-V, virtual machines, Active Directory
-                        tools, departmental file-sharing permissions, and
-                        Group Policy configuration.
+                        Completed Windows Server 2022 labs involving Hyper-V,
+                        virtual machines, Active Directory tools, file-sharing
+                        permissions, and Group Policy configuration.
                     </p>
 
-                    <p class="technologies">
-                        <strong>Technologies:</strong>
-                        Windows Server 2022, Hyper-V, Active Directory,
-                        and Group Policy
-                    </p>
+                    <ul class="technology-tags">
+                        <li>Windows Server</li>
+                        <li>Hyper-V</li>
+                        <li>Active Directory</li>
+                    </ul>
 
-                    <a
-                        href="documents/windows-server-hyper-v.pdf"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        View Project
-                    </a>
+                    <div class="project-links">
 
-                    <a
-                        href="https://github.com/ryanfraser2024-bit"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        View GitHub Profile
-                    </a>
+                        <a
+                            href="documents/windows-server-hyper-v.pdf"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            View Project
+                        </a>
+
+                        <a
+                            href="https://github.com/ryanfraser2024-bit"
+                            target="_blank"
+                            rel="noopener"
+                            class="secondary-project-link"
+                        >
+                            View GitHub
+                        </a>
+
+                    </div>
 
                 </article>
 
@@ -270,33 +447,44 @@
         <!-- Resume Section -->
         <section id="resume">
 
-            <h2 class="section-title">
-                Resume
-            </h2>
+            <div class="resume-content">
 
-            <p>
-                Review my education, technical skills, academic projects,
-                and professional experience.
-            </p>
+                <div>
 
-            <div class="resume-buttons">
+                    <p class="section-label">
+                        Professional background
+                    </p>
 
-                <a
-                    href="documents/Ryan-Fraser-Resume.pdf"
-                    class="button"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    View Resume
-                </a>
+                    <h2>View My Resume</h2>
 
-                <a
-                    href="documents/Ryan-Fraser-Resume.pdf"
-                    class="button secondary-button"
-                    download
-                >
-                    Download Resume
-                </a>
+                    <p>
+                        Review my education, technical skills, academic
+                        projects, leadership experience, and employment
+                        history.
+                    </p>
+
+                </div>
+
+                <div class="resume-buttons">
+
+                    <a
+                        href="documents/Ryan-Fraser-Resume.pdf"
+                        class="button"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        View Resume
+                    </a>
+
+                    <a
+                        href="documents/Ryan-Fraser-Resume.pdf"
+                        class="button outline-button"
+                        download
+                    >
+                        Download Resume
+                    </a>
+
+                </div>
 
             </div>
 
@@ -305,66 +493,113 @@
         <!-- QR Code Section -->
         <section id="qr-code">
 
-            <h2 class="section-title">
-                Share My Portfolio
-            </h2>
+            <div class="qr-content">
 
-            <p>
-                Scan the QR code to open my portfolio on another device.
-            </p>
+                <div>
 
-            <img
-                src="images/portfolio-qr-code.png"
-                alt="QR code linking to Ryan Fraser's portfolio"
-                class="qr-image"
-            >
+                    <p class="section-label">
+                        Share my work
+                    </p>
+
+                    <h2 class="section-title">
+                        Scan My Portfolio
+                    </h2>
+
+                    <p>
+                        Scan this QR code with a phone or tablet to open my
+                        portfolio on another device.
+                    </p>
+
+                </div>
+
+                <div class="qr-card">
+
+                    <img
+                        src="images/portfolio-qr-code.png"
+                        alt="QR code linking to Ryan Fraser's portfolio"
+                        class="qr-image"
+                    >
+
+                    <p>Ryan Fraser Portfolio</p>
+
+                </div>
+
+            </div>
 
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
 
-            <h2 class="section-title">
-                Contact Me
-            </h2>
+            <div class="section-heading">
+
+                <p class="section-label">
+                    Let’s connect
+                </p>
+
+                <h2 class="section-title">
+                    Contact Me
+                </h2>
+
+                <p class="section-description">
+                    Complete the form below to create an email addressed to me.
+                </p>
+
+            </div>
 
             <form id="contact-form">
 
-                <label for="name">
-                    Name
-                </label>
+                <div class="form-row">
 
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your name"
-                    required
-                >
+                    <div class="form-group">
 
-                <label for="email">
-                    Email
-                </label>
+                        <label for="name">
+                            Name
+                        </label>
 
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email address"
-                    required
-                >
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
 
-                <label for="message">
-                    Message
-                </label>
+                    </div>
 
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="6"
-                    placeholder="Enter your message"
-                    required
-                ></textarea>
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Enter your message"
+                        required
+                    ></textarea>
+
+                </div>
 
                 <button type="submit" class="button">
                     Create Email
@@ -396,7 +631,10 @@
 
         <div class="chat-header">
 
-            <h2>Portfolio Assistant</h2>
+            <div>
+                <p>Online assistant</p>
+                <h2>Portfolio Chatbot</h2>
+            </div>
 
             <button
                 id="close-chat"
@@ -414,8 +652,8 @@
         >
 
             <p class="bot-message">
-                Hello! Ask me about Ryan's skills, education,
-                experience, or projects.
+                Hello! Ask me about Ryan’s skills, education,
+                experience, resume, or projects.
             </p>
 
         </div>
@@ -425,7 +663,7 @@
             <input
                 type="text"
                 id="chat-input"
-                placeholder="Type your question..."
+                placeholder="Ask a question..."
                 autocomplete="off"
                 aria-label="Chat question"
                 required
@@ -443,7 +681,7 @@
     <footer>
 
         <p>
-            &copy; 2026 Ryan Fraser. All rights reserved.
+            &copy; 2026 Ryan Fraser. Built with HTML, CSS, and JavaScript.
         </p>
 
     </footer>
