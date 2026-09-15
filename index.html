@@ -1,116 +1,455 @@
-<div class="project-container">
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Credit Card Payment Verification Project -->
-    <article class="project-card">
+<head>
+    <meta charset="UTF-8">
 
-        <h3>
-            Credit Card Payment Verification System
-        </h3>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Ryan Fraser's Computer Technology portfolio featuring web development, cybersecurity, and systems administration projects."
+    >
+
+    <title>Ryan Fraser | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav aria-label="Main navigation">
+
+            <a class="logo" href="#home">
+                Ryan Fraser
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#qr-code">QR Code</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="home">
+
+            <div class="home-content">
+
+                <p class="intro-text">
+                    Hello, my name is
+                </p>
+
+                <h1>Ryan Fraser</h1>
+
+                <h2>Computer Technology Student</h2>
+
+                <p>
+                    I am a senior at Bowie State University with hands-on
+                    experience in web development, cybersecurity, database
+                    management, networking, and Windows Server administration.
+                </p>
+
+                <div class="home-buttons">
+
+                    <a href="#projects" class="button">
+                        View My Projects
+                    </a>
+
+                    <a
+                        href="https://github.com/ryanfraser2024-bit"
+                        class="button secondary-button"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Visit My GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <div class="about-content">
+
+                <p>
+                    I am pursuing a Bachelor of Science in Computer Technology
+                    at Bowie State University and expect to graduate in
+                    December 2026. My coursework has allowed me to create web
+                    applications, design databases, analyze network traffic,
+                    and configure Windows Server environments.
+                </p>
+
+                <p>
+                    I also work as a substitute teacher and youth mentor.
+                    These experiences have strengthened my communication,
+                    leadership, organization, adaptability, and
+                    problem-solving skills.
+                </p>
+
+                <h3>Education</h3>
+
+                <p>
+                    <strong>Bowie State University</strong><br>
+                    Bachelor of Science in Computer Technology<br>
+                    Expected graduation: December 2026
+                </p>
+
+                <h3>Technical Skills</h3>
+
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>SQL</li>
+                    <li>MySQL</li>
+                    <li>GitHub</li>
+                    <li>Wireshark</li>
+                    <li>Windows Server 2022</li>
+                    <li>Hyper-V</li>
+                    <li>Active Directory</li>
+                    <li>Group Policy</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+
+            <h2 class="section-title">
+                Projects
+            </h2>
+
+            <p class="projects-introduction">
+                These projects demonstrate my experience in web development,
+                cybersecurity, networking, and systems administration.
+            </p>
+
+            <div class="project-container">
+
+                <!-- Credit Card Payment Verification Project -->
+                <article class="project-card">
+
+                    <h3>
+                        Credit Card Payment Verification System
+                    </h3>
+
+                    <p>
+                        Developed a web-based system that verifies credit card
+                        payment information before processing. The system
+                        checks required fields, card-number formatting,
+                        expiration dates, and security-code entries while
+                        providing clear verification messages.
+                    </p>
+
+                    <p class="technologies">
+                        <strong>Technologies:</strong>
+                        HTML, CSS, and JavaScript
+                    </p>
+
+                    <a
+                        href="documents/credit-card-payment-verification.pdf"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        View Project
+                    </a>
+
+                    <a
+                        href="https://github.com/ryanfraser2024-bit"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        View GitHub Profile
+                    </a>
+
+                </article>
+
+                <!-- Wireshark Project -->
+                <article class="project-card">
+
+                    <h3>
+                        Wireshark Packet Inspection
+                    </h3>
+
+                    <p>
+                        Captured and analyzed live DNS, HTTP, HTTPS, TCP, and
+                        UDP traffic to identify protocol patterns, frequent
+                        destinations, network conversations, and potential
+                        security concerns.
+                    </p>
+
+                    <p class="technologies">
+                        <strong>Technologies:</strong>
+                        Wireshark, DNS, HTTP, HTTPS, TCP, and UDP
+                    </p>
+
+                    <a
+                        href="documents/wireshark-packet-inspection.pdf"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        View Project
+                    </a>
+
+                    <a
+                        href="https://github.com/ryanfraser2024-bit"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        View GitHub Profile
+                    </a>
+
+                </article>
+
+                <!-- Windows Server Project -->
+                <article class="project-card">
+
+                    <h3>
+                        Windows Server Administration and Hyper-V
+                    </h3>
+
+                    <p>
+                        Completed a series of Windows Server 2022 labs
+                        involving Hyper-V, virtual machines, Active Directory
+                        tools, departmental file-sharing permissions, and
+                        Group Policy configuration.
+                    </p>
+
+                    <p class="technologies">
+                        <strong>Technologies:</strong>
+                        Windows Server 2022, Hyper-V, Active Directory,
+                        and Group Policy
+                    </p>
+
+                    <a
+                        href="documents/windows-server-hyper-v.pdf"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        View Project
+                    </a>
+
+                    <a
+                        href="https://github.com/ryanfraser2024-bit"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        View GitHub Profile
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume">
+
+            <h2 class="section-title">
+                Resume
+            </h2>
+
+            <p>
+                Review my education, technical skills, academic projects,
+                and professional experience.
+            </p>
+
+            <div class="resume-buttons">
+
+                <a
+                    href="documents/Ryan-Fraser-Resume.pdf"
+                    class="button"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    View Resume
+                </a>
+
+                <a
+                    href="documents/Ryan-Fraser-Resume.pdf"
+                    class="button secondary-button"
+                    download
+                >
+                    Download Resume
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- QR Code Section -->
+        <section id="qr-code">
+
+            <h2 class="section-title">
+                Share My Portfolio
+            </h2>
+
+            <p>
+                Scan the QR code to open my portfolio on another device.
+            </p>
+
+            <img
+                src="images/portfolio-qr-code.png"
+                alt="QR code linking to Ryan Fraser's portfolio"
+                class="qr-image"
+            >
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+
+            <h2 class="section-title">
+                Contact Me
+            </h2>
+
+            <form id="contact-form">
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Enter your message"
+                    required
+                ></textarea>
+
+                <button type="submit" class="button">
+                    Create Email
+                </button>
+
+                <p id="form-message"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Chatbot Button -->
+    <button
+        id="chat-button"
+        aria-label="Open portfolio chatbot"
+    >
+        Chat
+    </button>
+
+    <!-- Chatbot Window -->
+    <div
+        id="chatbot"
+        class="chatbot hidden"
+        role="dialog"
+        aria-label="Portfolio chatbot"
+    >
+
+        <div class="chat-header">
+
+            <h2>Portfolio Assistant</h2>
+
+            <button
+                id="close-chat"
+                aria-label="Close chatbot"
+            >
+                &times;
+            </button>
+
+        </div>
+
+        <div
+            id="chat-messages"
+            class="chat-messages"
+            aria-live="polite"
+        >
+
+            <p class="bot-message">
+                Hello! Ask me about Ryan's skills, education,
+                experience, or projects.
+            </p>
+
+        </div>
+
+        <form id="chat-form" class="chat-input-area">
+
+            <input
+                type="text"
+                id="chat-input"
+                placeholder="Type your question..."
+                autocomplete="off"
+                aria-label="Chat question"
+                required
+            >
+
+            <button type="submit">
+                Send
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
 
         <p>
-            Developed a web-based system that verifies credit card
-            payment information before processing. The system checks
-            required fields, card-number formatting, expiration dates,
-            and security-code entries while providing clear
-            verification messages.
+            &copy; 2026 Ryan Fraser. All rights reserved.
         </p>
 
-        <p class="technologies">
-            <strong>Technologies:</strong>
-            HTML, CSS, and JavaScript
-        </p>
+    </footer>
 
-        <a
-            href="documents/credit-card-payment-verification.pdf"
-            target="_blank"
-            rel="noopener"
-        >
-            View Project
-        </a>
+    <script src="script.js"></script>
 
-        <a
-            href="https://github.com/ryanfraser2024-bit"
-            target="_blank"
-            rel="noopener"
-        >
-            View GitHub Profile
-        </a>
+</body>
 
-    </article>
-
-    <!-- Wireshark Project -->
-    <article class="project-card">
-
-        <h3>
-            Wireshark Packet Inspection
-        </h3>
-
-        <p>
-            Captured and analyzed live DNS, HTTP, HTTPS, TCP, and UDP
-            traffic to identify protocol patterns, frequent
-            destinations, network conversations, and potential
-            security concerns.
-        </p>
-
-        <p class="technologies">
-            <strong>Technologies:</strong>
-            Wireshark, DNS, HTTP, HTTPS, TCP, and UDP
-        </p>
-
-        <a
-            href="documents/wireshark-packet-inspection.pdf"
-            target="_blank"
-            rel="noopener"
-        >
-            View Project
-        </a>
-
-        <a
-            href="https://github.com/ryanfraser2024-bit"
-            target="_blank"
-            rel="noopener"
-        >
-            View GitHub Profile
-        </a>
-
-    </article>
-
-    <!-- Windows Server Project -->
-    <article class="project-card">
-
-        <h3>
-            Windows Server Administration and Hyper-V
-        </h3>
-
-        <p>
-            Completed a series of Windows Server 2022 labs involving
-            Hyper-V, virtual machines, Active Directory tools,
-            departmental file-sharing permissions, and Group Policy
-            configuration.
-        </p>
-
-        <p class="technologies">
-            <strong>Technologies:</strong>
-            Windows Server 2022, Hyper-V, Active Directory,
-            and Group Policy
-        </p>
-
-        <a
-            href="documents/windows-server-hyper-v.pdf"
-            target="_blank"
-            rel="noopener"
-        >
-            View Project
-        </a>
-
-        <a
-            href="https://github.com/ryanfraser2024-bit"
-            target="_blank"
-            rel="noopener"
-        >
-            View GitHub Profile
-        </a>
-
-    </article>
-
-</div>
+</html>
