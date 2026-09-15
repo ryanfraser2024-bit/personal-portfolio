@@ -58,11 +58,13 @@ function getBotResponse(question) {
     }
 
     if (
-        userQuestion.includes("dealership") ||
-        userQuestion.includes("vin") ||
-        userQuestion.includes("database")
+        userQuestion.includes("credit card") ||
+        userQuestion.includes("payment") ||
+        userQuestion.includes("verification") ||
+        userQuestion.includes("card number") ||
+        userQuestion.includes("expiration")
     ) {
-        return "Ryan built a Used Car Dealership System using PHP, MySQL, HTML, CSS, JavaScript, VIN validation, prepared statements, database joins, and JSON API output.";
+        return "Ryan developed a Credit Card Payment Verification System using HTML, CSS, and JavaScript. The system checks required fields, card-number formatting, expiration dates, and security-code entries while providing clear verification messages.";
     }
 
     if (
@@ -87,7 +89,7 @@ function getBotResponse(question) {
         userQuestion.includes("project") ||
         userQuestion.includes("work")
     ) {
-        return "Ryan's featured projects are a Used Car Dealership System, Wireshark Packet Inspection, and a Windows Server Administration and Hyper-V lab series.";
+        return "Ryan's featured projects are a Credit Card Payment Verification System, Wireshark Packet Inspection, and a Windows Server Administration and Hyper-V lab series.";
     }
 
     if (
