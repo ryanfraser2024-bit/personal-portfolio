@@ -43,11 +43,13 @@ nav {
 .logo {
     color: #60a5fa;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .nav-links {
     display: flex;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 22px;
     list-style: none;
 }
 
@@ -56,7 +58,8 @@ nav {
     font-weight: bold;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a:focus {
     color: #60a5fa;
 }
 
@@ -82,7 +85,7 @@ section {
 }
 
 .home-content {
-    max-width: 750px;
+    max-width: 780px;
 }
 
 .intro-text {
@@ -91,14 +94,14 @@ section {
     font-weight: bold;
 }
 
-.home h2 {
+.home h1 {
     color: #111827;
     font-size: 64px;
     line-height: 1.2;
     margin: 10px 0;
 }
 
-.home h3 {
+.home h2 {
     color: #4b5563;
     font-size: 32px;
     margin-bottom: 20px;
@@ -108,12 +111,17 @@ section {
     font-size: 18px;
 }
 
+/* Button groups */
 .home-buttons,
 .resume-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 30px;
+}
+
+.resume-buttons {
+    justify-content: center;
 }
 
 /* Buttons */
@@ -127,9 +135,11 @@ section {
     font-size: 16px;
     font-weight: bold;
     padding: 13px 22px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     background-color: #1d4ed8;
     transform: translateY(-2px);
 }
@@ -138,13 +148,15 @@ section {
     background-color: #374151;
 }
 
-.secondary-button:hover {
+.secondary-button:hover,
+.secondary-button:focus {
     background-color: #1f2937;
 }
 
 /* About section */
 #about {
     background-color: white;
+    border: 1px solid #e2e8f0;
     border-radius: 16px;
 }
 
@@ -179,6 +191,12 @@ section {
 }
 
 /* Projects section */
+.projects-introduction {
+    margin: -12px auto 35px;
+    max-width: 760px;
+    text-align: center;
+}
+
 .project-container {
     display: grid;
     gap: 25px;
@@ -187,8 +205,11 @@ section {
 
 .project-card {
     background-color: white;
+    border: 1px solid #e2e8f0;
     border-radius: 12px;
     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
     padding: 28px;
     transition: transform 0.3s ease;
 }
@@ -199,6 +220,7 @@ section {
 
 .project-card h3 {
     color: #111827;
+    font-size: 22px;
     margin-bottom: 15px;
 }
 
@@ -206,23 +228,38 @@ section {
     margin-bottom: 20px;
 }
 
+.technologies {
+    color: #4b5563;
+    font-size: 15px;
+}
+
 .project-card a {
     color: #2563eb;
     font-weight: bold;
+    margin-top: auto;
 }
 
-/* Resume and QR sections */
+.project-card a:hover,
+.project-card a:focus {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* Resume and QR-code sections */
 #resume,
 #qr-code {
     text-align: center;
 }
 
-.resume-buttons {
-    justify-content: center;
+#resume {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
 }
 
 .qr-image {
     background-color: white;
+    border: 1px solid #e2e8f0;
     border-radius: 10px;
     margin-top: 25px;
     max-width: 220px;
@@ -230,9 +267,10 @@ section {
     width: 100%;
 }
 
-/* Contact form */
+/* Contact section */
 #contact {
     background-color: white;
+    border: 1px solid #e2e8f0;
     border-radius: 16px;
 }
 
@@ -261,7 +299,7 @@ section {
 #contact-form input:focus,
 #contact-form textarea:focus {
     border-color: #2563eb;
-    outline: none;
+    outline: 2px solid #bfdbfe;
 }
 
 #form-message {
@@ -270,7 +308,7 @@ section {
     margin-top: 15px;
 }
 
-/* Chatbot button */
+/* Chat button */
 #chat-button {
     background-color: #2563eb;
     border: none;
@@ -285,6 +323,7 @@ section {
     position: fixed;
     right: 25px;
     width: 65px;
+    z-index: 1500;
 }
 
 /* Chatbot window */
@@ -360,6 +399,7 @@ section {
     border: 1px solid #cbd5e1;
     border-radius: 6px;
     flex: 1;
+    min-width: 0;
     padding: 10px;
 }
 
@@ -383,23 +423,22 @@ footer {
 }
 
 /* Phone and tablet responsiveness */
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     nav {
         flex-direction: column;
         gap: 15px;
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
         gap: 14px;
+        justify-content: center;
     }
 
-    .home h2 {
+    .home h1 {
         font-size: 44px;
     }
 
-    .home h3 {
+    .home h2 {
         font-size: 25px;
     }
 
