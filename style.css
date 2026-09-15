@@ -1,0 +1,413 @@
+/* General page settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f7fb;
+    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Navigation */
+header {
+    background-color: #111827;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px 6%;
+}
+
+.logo {
+    color: #60a5fa;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* General section settings */
+section {
+    margin: auto;
+    max-width: 1200px;
+    padding: 90px 6%;
+}
+
+.section-title {
+    color: #111827;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Home section */
+.home {
+    align-items: center;
+    display: flex;
+    min-height: 90vh;
+}
+
+.home-content {
+    max-width: 750px;
+}
+
+.intro-text {
+    color: #2563eb;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home h2 {
+    color: #111827;
+    font-size: 64px;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+.home h3 {
+    color: #4b5563;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+}
+
+.home-buttons,
+.resume-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Buttons */
+.button {
+    background-color: #2563eb;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 13px 22px;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    background-color: #374151;
+}
+
+.secondary-button:hover {
+    background-color: #1f2937;
+}
+
+/* About section */
+#about {
+    background-color: white;
+    border-radius: 16px;
+}
+
+.about-content {
+    margin: auto;
+    max-width: 850px;
+}
+
+.about-content p {
+    margin-bottom: 22px;
+}
+
+.about-content h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+    margin-top: 28px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+}
+
+.skills-list li {
+    background-color: #dbeafe;
+    border-radius: 20px;
+    color: #1e40af;
+    font-weight: bold;
+    padding: 9px 16px;
+}
+
+/* Projects section */
+.project-container {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    padding: 28px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+}
+
+.project-card h3 {
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Resume and QR sections */
+#resume,
+#qr-code {
+    text-align: center;
+}
+
+.resume-buttons {
+    justify-content: center;
+}
+
+.qr-image {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 25px;
+    max-width: 220px;
+    padding: 12px;
+    width: 100%;
+}
+
+/* Contact form */
+#contact {
+    background-color: white;
+    border-radius: 16px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 650px;
+}
+
+#contact-form label {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 13px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+#form-message {
+    color: #166534;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Chatbot button */
+#chat-button {
+    background-color: #2563eb;
+    border: none;
+    border-radius: 50%;
+    bottom: 25px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 65px;
+    position: fixed;
+    right: 25px;
+    width: 65px;
+}
+
+/* Chatbot window */
+.chatbot {
+    background-color: white;
+    border-radius: 12px;
+    bottom: 105px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    max-width: calc(100% - 40px);
+    overflow: hidden;
+    position: fixed;
+    right: 25px;
+    width: 350px;
+    z-index: 2000;
+}
+
+.hidden {
+    display: none;
+}
+
+.chat-header {
+    align-items: center;
+    background-color: #111827;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.chat-header h2 {
+    font-size: 18px;
+}
+
+#close-chat {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.chat-messages {
+    height: 280px;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.bot-message,
+.user-message {
+    border-radius: 10px;
+    margin-bottom: 12px;
+    max-width: 85%;
+    padding: 10px;
+}
+
+.bot-message {
+    background-color: #e5e7eb;
+}
+
+.user-message {
+    background-color: #2563eb;
+    color: white;
+    margin-left: auto;
+}
+
+.chat-input-area {
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    padding: 10px;
+}
+
+.chat-input-area input {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    flex: 1;
+    padding: 10px;
+}
+
+.chat-input-area button {
+    background-color: #2563eb;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    margin-left: 7px;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #111827;
+    color: white;
+    margin-top: 70px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Phone and tablet responsiveness */
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .home h2 {
+        font-size: 44px;
+    }
+
+    .home h3 {
+        font-size: 25px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+}
